@@ -1,0 +1,799 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Feb 3, 2023 05:17:54 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@GBP_non_us</a><a class="dropdown-item" href="#">@Deposit_non_us</a><a class="dropdown-item" href="#">@EURO_non_us</a><a class="dropdown-item" href="#">@USD_non_us</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test Accounts Functionality</p>
+            <p class="text-sm">
+              <span>5:17:54 PM</span> / <span>00:04:15:275</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Test Accounts Functionality</h5>
+<span class='badge badge-success'>02.03.2023 5:17:54 PM</span>
+<span class='badge badge-danger'>02.03.2023 5:22:10 PM</span>
+<span class='badge badge-default'>00:04:15:275</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Deposit: Verify Card Deposit to USD Wallet via Apexx</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinations.LoginStep.a_valid_url()">
+                <span>Given a valid url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.user_clicks_on_usd_wallet()">
+                <span>When user clicks on USD wallet</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.user_clicks_on_deposit()">
+                <span>And user clicks on deposit</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.user_expend_from_dropdown()">
+                <span>And user expend from dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.user_selects_debit_or_credit_card()">
+                <span>And user selects debit or credit card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.user_enters_amount_to_deposit(java.lang.String)">
+                <span>And user enters amount to deposit "5000"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.user_clicks_agreement()">
+                <span>And user clicks agreement</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.deposit_summary_should_appear()">
+                <span>And deposit summary should appear</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.clicks_confirm()">
+                <span>And clicks confirm</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.PaymentGatewayStep.enter_card_details_in_apexx_and_clicks_on_pay()">
+                <span>And enter card details in Apexx and clicks on pay</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.user_checks_confirmation_message()">
+                <span>And user checks confirmation message and press ok</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.user_should_redirect_to_accounts()">
+                <span>Then user should redirect to accounts</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="16"><span class="badge log fail-bg mr-2">Fail</span>Deposit: Verify Card Deposit to Euro Wallet via Apexx</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinations.LoginStep.a_valid_url()">
+                <span>Given a valid url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="StepDefinations.Accounts_Step.user_clicks_on_euro_wallet()">
+                <span>When user clicks on EURO wallet</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[contains(text(),'Euro')])[1]"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SR-LP-01001', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Rashed\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:52291}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d3c45ebd30a92ecfc27c2bead10ad431
+*** Element info: {Using=xpath, value=(//span[contains(text(),'Euro')])[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy19.click(Unknown Source)
+	at Pages.Accounts_Page.euroWalletClick(Accounts_Page.java:503)
+	at StepDefinations.Accounts_Step.user_clicks_on_euro_wallet(Accounts_Step.java:58)
+	at ✽.user clicks on EURO wallet(file:///D:/Portal%20Automation/Spring%20Rain/Full%20Test/PortalsFullTestRun/src/test/resources/Features/Accounts/Accounts.feature:196)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinations.Accounts_Step.user_clicks_on_deposit()">
+                <span>And user clicks on deposit</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinations.Accounts_Step.user_expend_from_dropdown()">
+                <span>And user expend from dropdown</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinations.Accounts_Step.user_selects_debit_or_credit_card()">
+                <span>And user selects debit or credit card</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinations.Accounts_Step.user_enters_amount_to_deposit(java.lang.String)">
+                <span>And user enters amount to deposit "5000"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinations.Accounts_Step.user_clicks_agreement()">
+                <span>And user clicks agreement</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinations.Accounts_Step.deposit_summary_should_appear()">
+                <span>And deposit summary should appear</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinations.Accounts_Step.clicks_confirm()">
+                <span>And clicks confirm</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinations.PaymentGatewayStep.enter_card_details_in_apexx_and_clicks_on_pay()">
+                <span>And enter card details in Apexx and clicks on pay</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinations.Accounts_Step.user_checks_confirmation_message()">
+                <span>And user checks confirmation message and press ok</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefinations.Accounts_Step.user_should_redirect_to_accounts()">
+                <span>Then user should redirect to accounts</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>StepDefinations.LoginStep.takeScraenshotOnFailure(io.cucumber.java.Scenario)</span>
+      <div>Deposit: Verify Card Deposit to Euro Wallet via Apexx
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../Screenshots/embedded1.png' src="../Screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="30"><span class="badge log pass-bg mr-2">Pass</span>Deposit: Verify Card Deposit to GBP Wallet via Apexx</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinations.LoginStep.a_valid_url()">
+                <span>Given a valid url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.user_clicks_on_gbp_wallet()">
+                <span>When user clicks on GBP wallet</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.user_clicks_on_deposit()">
+                <span>And user clicks on deposit</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.user_expend_from_dropdown()">
+                <span>And user expend from dropdown</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.user_selects_debit_or_credit_card()">
+                <span>And user selects debit or credit card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.user_enters_amount_to_deposit(java.lang.String)">
+                <span>And user enters amount to deposit "5000"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.user_clicks_agreement()">
+                <span>And user clicks agreement</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.deposit_summary_should_appear()">
+                <span>And deposit summary should appear</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.clicks_confirm()">
+                <span>And clicks confirm</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.PaymentGatewayStep.enter_card_details_in_apexx_and_clicks_on_pay()">
+                <span>And enter card details in Apexx and clicks on pay</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.user_checks_confirmation_message()">
+                <span>And user checks confirmation message and press ok</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinations.Accounts_Step.user_should_redirect_to_accounts()">
+                <span>Then user should redirect to accounts</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:20:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>When user clicks on EURO wallet</a>
+<div class="">
+<span class="badge badge-default">Test Accounts Functionality.Deposit: Verify Card Deposit to Euro Wallet via Apexx.When user clicks on EURO wallet</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GBP_non_us</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GBP_non_us</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:20:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='30'>Deposit: Verify Card Deposit to GBP Wallet via Apexx</a>
+<div class="">
+<span class="badge badge-default">Test Accounts Functionality.Deposit: Verify Card Deposit to GBP Wallet via Apexx</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Deposit_non_us</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Deposit_non_us</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:17:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Deposit: Verify Card Deposit to USD Wallet via Apexx</a>
+<div class="">
+<span class="badge badge-default">Test Accounts Functionality.Deposit: Verify Card Deposit to USD Wallet via Apexx</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:19:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>Deposit: Verify Card Deposit to Euro Wallet via Apexx</a>
+<div class="">
+<span class="badge badge-default">Test Accounts Functionality.Deposit: Verify Card Deposit to Euro Wallet via Apexx</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:20:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='30'>Deposit: Verify Card Deposit to GBP Wallet via Apexx</a>
+<div class="">
+<span class="badge badge-default">Test Accounts Functionality.Deposit: Verify Card Deposit to GBP Wallet via Apexx</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@EURO_non_us</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@EURO_non_us</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:19:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>Deposit: Verify Card Deposit to Euro Wallet via Apexx</a>
+<div class="">
+<span class="badge badge-default">Test Accounts Functionality.Deposit: Verify Card Deposit to Euro Wallet via Apexx</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@USD_non_us</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@USD_non_us</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>17:17:54 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Deposit: Verify Card Deposit to USD Wallet via Apexx</a>
+<div class="">
+<span class="badge badge-default">Test Accounts Functionality.Deposit: Verify Card Deposit to USD Wallet via Apexx</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Feb 3, 2023 05:17:54 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Feb 3, 2023 05:22:10 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='66%'><b>2</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='33%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='70%'><b>26</b> steps passed</small></div>
+<div>
+<small data-tooltip='2%'><b>1</b> steps failed,
+<b>10</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Test Accounts Functionality":255.275
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@GBP_non_us</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Deposit_non_us</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>66.667%</td>
+</tr>
+<tr>
+<td>@EURO_non_us</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@USD_non_us</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 2,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 26,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 10,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
